@@ -3,6 +3,7 @@
 # echo "Starting preprocessing to generate a report."
 # python3 /Users/apizzimenti/desktop/Preprocessing/main.py
 # mv /Users/apizzimenti/desktop/Preprocessing/Proration.html $(pwd)/output/Proration.html
+# mv /Users/apizzimenti/desktop/Preprocessing/Proration_images $(pwd)/output/Proration_images
 
 # Run the data analysis (to make sure it's all updated)
 echo "Running data analysis on the dual graph."
