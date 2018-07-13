@@ -1,0 +1,3 @@
+663 additional edges in queen adjacency graph.
+Are there edges in the rook graph that aren't in the queen? Yes.
+51 0-population VTDs and 60 boundary VTDs.
