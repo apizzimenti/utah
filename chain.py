@@ -86,7 +86,7 @@ def main():
         axes[quadrant].axvline(x=initial_scores[key], color="r")
         
     # Show the histogram.
-    plt.show()
+    plt.savefig(f"./output/histograms/{steps}.png")
     
 
 if __name__ == "__main__":

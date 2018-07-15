@@ -21,7 +21,7 @@ codes = [fips_type(odd) for odd in odds]
 # create a FIPS code column (or unique identifier column) on the voter file that
 # has the same name as the FIPS code column (or unique ID column) on the shapefile.
 same_shp_column = "FIPS"
-df["FIPS"] = codes
+df[same_shp_column] = codes
 df.to_csv("./state_data/fips_straight_party.csv")
 
 # Read the voting data from the csv (bad programming practice, I know,

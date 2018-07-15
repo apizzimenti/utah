@@ -1,9 +1,10 @@
 
-# Run proration, but only get the report.
-# echo "Starting preprocessing to generate a report."
-# python3 /Users/apizzimenti/desktop/Preprocessing/main.py
-# mv /Users/apizzimenti/desktop/Preprocessing/Proration.html $(pwd)/output/Proration.html
-# mv /Users/apizzimenti/desktop/Preprocessing/Proration_images $(pwd)/output/Proration_images
+# Run proration and get the report + protated data.
+echo "Starting preprocessing to generate a report."
+python3 ./Preprocessing/main.py
+mv ./Prorated.* ./Prorated/
+mv ./Proration.html ./output/Proration.html
+mv ./Proration_images ./output/Proration_images
 
 # Run the data analysis (to make sure it's all updated)
 echo "Running data analysis on the dual graph."
