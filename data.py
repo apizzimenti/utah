@@ -16,7 +16,11 @@ fips_type = float
 odds = range(1, num_counties * 2, 2)
 codes = [fips_type(odd) for odd in odds]
 
-# Assign county FIPS codes to county and write back to the csv.
+# Assign county FIPS codes to county and write back to the csv. Also note that,
+# in order to properly marry the voting data to the county shapefile, we have to
+# create a FIPS code column (or unique identifier column) on the voter file that
+# has the same name as the FIPS code column (or unique ID column) on the shapefile.
+same_shp_column = "FIPS"
 df["FIPS"] = codes
 df.to_csv("./state_data/fips_straight_party.csv")
 
